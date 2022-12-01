@@ -3,11 +3,11 @@ import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import Alert from './Components/Alert';
 import React, { useState } from 'react';
-// import AboutUs from './Components/AboutUs';
-// import {
-//   BrowserRouter as Router,
-//   Route, Routes
-// } from "react-router-dom";
+import AboutUs from './Components/AboutUs';
+import {
+  BrowserRouter as Router,
+  Route, Routes
+} from "react-router-dom";
 
 
 function App() {
@@ -46,14 +46,13 @@ function App() {
       <Alert alert={alert} />
 
       <div className="container my-3">
-        {/* <Router>
+         <Router>
           <Routes>
             <Route exact path="/about" element={<AboutUs/>} />
-            <Route exact path="/"
+            <Route exact path="/home"
               element={<TextForm heading="Enter the text in the below box" mode={mode} showAlert={showAlert} />} />
           </Routes>
-        </Router> */}
-        <TextForm heading="Enter the text in the below box" mode={mode} showAlert={showAlert} />
+        </Router> 
       </div>
 
     </>
