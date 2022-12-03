@@ -3,11 +3,11 @@ import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import Alert from './Components/Alert';
 import React, { useState } from 'react';
-// import AboutUs from './Components/AboutUs';
-// import {
-//   BrowserRouter as Router,
-//   Route, Routes
-// } from "react-router-dom";
+import AboutUs from './Components/AboutUs';
+import {
+  BrowserRouter as Router,
+  Route, Routes
+} from "react-router-dom";
 
 
 function App() {
@@ -41,19 +41,18 @@ function App() {
 
   return (
     <>
-      <Navbar title="Text-Utility" about="About us" mode={mode} toggleMode={toggleMode} />
       {/* <Navbar/> This is for Default Props */}
       <Alert alert={alert} />
 
       <div className="container my-3">
-        {/* <Router>
+        <Router>
+        <Navbar title="Text-Utility" about="About us" mode={mode} toggleMode={toggleMode} />
           <Routes>
-            <Route exact path="/about" element={<AboutUs/>} />
-            <Route exact path="/"
+            <Route path="/about" element={<AboutUs/>} />
+            <Route path="/"
               element={<TextForm heading="Enter the text in the below box" mode={mode} showAlert={showAlert} />} />
           </Routes>
-        </Router> */}
-        <TextForm heading="Enter the text in the below box" mode={mode} showAlert={showAlert} />
+        </Router>
       </div>
 
     </>
