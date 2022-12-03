@@ -41,18 +41,18 @@ function App() {
 
   return (
     <>
-      {/* <Navbar/> This is for Default Props */} 
+      <Navbar title="Text-Utility" about="About us" mode={mode} toggleMode={toggleMode} />
+      {/* <Navbar/> This is for Default Props */}
       <Alert alert={alert} />
 
       <div className="container my-3">
-        <Router>
-        <Navbar title="Text-Utility" about="About us" mode={mode} toggleMode={toggleMode} />
+         <Router>
           <Routes>
-            <Route path="/about" element={<AboutUs/>} />
-            <Route path="/"
+            <Route exact path="/about" element={<AboutUs/>} />
+            <Route exact path="/home"
               element={<TextForm heading="Enter the text in the below box" mode={mode} showAlert={showAlert} />} />
           </Routes>
-        </Router>
+        </Router> 
       </div>
 
     </>
