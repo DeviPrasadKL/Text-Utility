@@ -49,7 +49,7 @@ function App() {
           <Navbar title="Text-Utility" about="About us" mode={mode} toggleMode={toggleMode} />
           <Routes>
             <Route exact path="/about" element={<AboutUs />} />
-            <Route exact path="/home"
+            <Route exact path="/"
               element={<TextForm heading="Enter the text in the below box" mode={mode} showAlert={showAlert} />} />
           </Routes>
         </Router>
