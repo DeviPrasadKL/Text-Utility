@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-      {/* <Navbar/> This is for Default Props */}
+      {/* <Navbar/> This is for Default Props */} 
       <Alert alert={alert} />
 
       <div className="container my-3">
