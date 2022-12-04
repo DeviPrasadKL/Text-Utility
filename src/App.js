@@ -42,11 +42,11 @@ function App() {
   return (
     <>
       {/* <Navbar/> This is for Default Props */}
-      <Alert alert={alert} />
 
-      <div className="container my-3">
+      <div className="container">
         <Router>
           <Navbar title="Text-Utility" about="About us" mode={mode} toggleMode={toggleMode} />
+          <Alert alert={alert} />
           <Routes>
             <Route exact path="/about" element={<AboutUs />} />
             <Route exact path="/"

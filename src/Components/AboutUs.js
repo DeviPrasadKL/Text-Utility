@@ -6,22 +6,22 @@ export default function AboutUs() {
     const [Mystyle, setMystyle] = useState({
         color: "black",
         backgroundColor: "white",
-    });
+    });  
     
     // This is for Button 
     const [btnText, setbtnText] = useState("Enable Dark Mode");
     
     const switchMode = ()=>{
-        if(Mystyle.color === "black"){
+        if(Mystyle.color === "#02214c"){
             setMystyle({
                 color: "white",
-                backgroundColor: "black",
+                backgroundColor: "#02214c",
                 border: "1px solid white"
             })
             setbtnText("Enable Light Mode");
         }else{
             setMystyle({
-                color: "black",
+                color: "#02214c",
                 backgroundColor: "white",
             })
             setbtnText("Enable Dark Mode");
