@@ -49,7 +49,7 @@ function App() {
           <Alert alert={alert} />
           <Routes>
             <Route exact path="/about" element={<AboutUs />} />
-            <Route exact path="/"
+            <Route exact path="/Text-Utility/"
               element={<TextForm heading="Enter the text in the below box" mode={mode} showAlert={showAlert} />} />
           </Routes>
         </Router>
